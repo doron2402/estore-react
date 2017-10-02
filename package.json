@@ -4,7 +4,9 @@
   "description": "online store using react and express",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -29,11 +31,13 @@
     "ejs": "^2.4.2",
     "express": "^4.14.0",
     "gulp": "^3.9.1",
-    "gulp-live-server": "0.0.30",
+    "gulp-live-server": "0.0.31",
     "react": "^15.1.0",
     "react-addons": "^0.9.1-deprecated",
     "react-dom": "^15.1.0",
     "reactify": "^1.1.1",
-    "vinyl-source-stream": "^1.1.0"
-  }
+    "vinyl-source-stream": "^1.1.0",
+    "snyk": "^1.41.1"
+  },
+  "snyk": true
 }
